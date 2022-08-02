@@ -6,24 +6,24 @@ export const GLOBAL_KEYS = {
 };
 
 // 是否允许对方在抽奖结束后重新抽奖
-export const IS_SHOW_RESTART = false;
+export const IS_SHOW_RESTART = True;
 
 // 首页配置
 export const homeConfig = {
   // 标题
-  title: '520送礼抽奖',
+  title: '淑娴七夕选择题',
   // 留言，数组的每一项代表一行
   messages: [
-    { key: 'a', wording: '这是第一行文案', },
-    { key: 's', wording: '这是第二行文案', },
-    { key: 'd', wording: '然后，这里是第三行文案', },
+    { key: 'a', wording: 'Hi,杜老板', },
+    { key: 's', wording: '这次的礼物，用抽奖的形式', },
+    { key: 'd', wording: '把选择权交给你', },
   ],
   // 最终解释权归属人
-  owner: 'XXX',
+  owner: 'HGH',
   // 抽奖转盘的动画时间，单位毫秒
-  timeout: 5000,
+  timeout: 4000,
   // 指定赠送的礼物的索引（第几个礼物中奖），取值范围 0-8
-  targetGiftIndex: null,
+  targetGiftIndex: 1,
 };
 
 // 礼物清单
@@ -31,12 +31,12 @@ export const homeConfig = {
 // 图片放在 public/images 中，建议是正方形，否则影响视觉体验
 // name 是礼物的全称；alias 是礼物的简称（用来显示在抽奖方格里）
 export const gifts = [
-  { key: 'q', name: 'Dior双飞套装', alias: 'Dior双飞', image: '/images/1.png',  description: '「经典迷人色彩，彰显奢华魅力」' },
-  { key: 'w', name: '腾讯视频终身VIP', alias: 'VIP', image: '/images/2.png',  description: '“为你承包一辈子的 VIP”' },
-  { key: 'e', name: '兰蔻小黑瓶套装', alias: '小黑瓶套装', image: '/images/3.png',  description: '「强维稳，快修护」' },
-  { key: 'r', name: '520红包', alias: '520', image: '/images/6.png',  description: '“想给你唱一百首情歌”' },
-  { key: 't', name: 'Dior星空套装', alias: 'Dior星空', image: '/images/5.png',  description: '「百变唇妆，精美雕琢」' },
-  { key: 'y', name: '1314红包', alias: '1314', image: '/images/6.png',  description: '“从今往后，我都会在你旁边”' },
-  { key: 'u', name: 'UR购物券：¥1,000', alias: 'UR', image: '/images/7.png',  description: '“UR！买！”' },
-  { key: 'i', name: 'Dyson美发套装', alias: '戴森', image: '/images/8.png',  description: '「不同造型需求，全面满足」' },
+  { key: 'q', name: '火锅走起', alias: '火锅', image: '/images/1.png',  description: '如果没有胃口，那就让火锅来吧' },
+  { key: 'w', name: '美丽口红', alias: '口红', image: '/images/2.png',  description: '让口红的红凸显大佬的白' },
+  { key: 'e', name: '香香护手霜', alias: '护手霜', image: '/images/3.png',  description: '芊芊玉手，需要呵护' },
+  { key: 'r', name: '52红包', alias: '52', image: '/images/6.png',  description: '别怪我太抠，大了你不收' },
+  { key: 't', name: '护肤套装', alias: '护肤品', image: '/images/5.png',  description: '护肤护的好，脸上痘痘少' },
+  { key: 'y', name: '灵动小挂件', alias: '挂件', image: '/images/4.png',  description: '挂件不贵重，随手便可丢' },
+  { key: 'u', name: '浪漫鲜花', alias: '鲜花', image: '/images/7.png',  description: '鲜花与大佬孰美，那一定是大佬美' },
+  { key: 'i', name: '试试烤鱼', alias: '烤鱼', image: '/images/8.png',  description: '火锅不太行，烤鱼来打底' },
 ];
