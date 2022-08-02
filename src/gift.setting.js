@@ -6,7 +6,7 @@ export const GLOBAL_KEYS = {
 };
 
 // 是否允许对方在抽奖结束后重新抽奖
-export const IS_SHOW_RESTART = false;
+export const IS_SHOW_RESTART = true;
 
 // 首页配置
 export const homeConfig = {
@@ -23,7 +23,7 @@ export const homeConfig = {
   // 抽奖转盘的动画时间，单位毫秒
   timeout: 4000,
   // 指定赠送的礼物的索引（第几个礼物中奖），取值范围 0-8
-  targetGiftIndex: 2,
+  targetGiftIndex: null,
 };
 
 // 礼物清单
